@@ -95,14 +95,6 @@ x = 10
 print(type(x))  # <class 'int'>
 ```
 
----
- 
- # Extend the README.md with string methods/functions section
-
-string_methods_section = """\
-
----
-
 ## 🔡 String Methods and Functions
 
 Python provides many built-in methods for manipulating strings. Strings are immutable, so most methods return a new string.
