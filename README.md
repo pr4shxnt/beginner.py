@@ -97,3 +97,39 @@ print(type(x))  # <class 'int'>
 
 ---
  
+ # Extend the README.md with string methods/functions section
+
+string_methods_section = """\
+
+---
+
+## 🔡 String Methods and Functions
+
+Python provides many built-in methods for manipulating strings. Strings are immutable, so most methods return a new string.
+
+### Common String Methods:
+
+| Method                | Description                                 | Example                                 |
+|-----------------------|---------------------------------------------|-----------------------------------------|
+| `str.lower()`         | Converts all characters to lowercase        | `"HELLO".lower()` → `"hello"`          |
+| `str.upper()`         | Converts all characters to uppercase        | `"hello".upper()` → `"HELLO"`          |
+| `str.strip()`         | Removes leading/trailing whitespace         | `"  hello  ".strip()` → `"hello"`      |
+| `str.replace(a, b)`   | Replaces substring `a` with `b`             | `"Hello".replace("H", "J")` → `"Jello"`|
+| `str.find(sub)`       | Returns index of first occurrence of `sub` | `"hello".find("e")` → `1`              |
+| `str.count(sub)`      | Counts number of times `sub` appears        | `"hello".count("l")` → `2`             |
+| `str.startswith()`    | Checks if string starts with given value    | `"hello".startswith("he")` → `True`    |
+| `str.endswith()`      | Checks if string ends with given value      | `"hello".endswith("lo")` → `True`      |
+| `str.split(sep)`      | Splits string into a list by `sep`         | `"a,b,c".split(",")` → `["a", "b", "c"]`|
+| `str.join(list)`      | Joins elements of list into a string        | `",".join(["a", "b", "c"])` → `"a,b,c"` |
+
+### String Formatting:
+
+```python
+name = "Alice"
+age = 25
+
+# f-string
+print(f"My name is {name} and I'm {age} years old.")
+
+# .format() method
+print("My name is {} and I'm {} years old.".format(name, age))
