@@ -96,20 +96,4 @@ print(type(x))  # <class 'int'>
 ```
 
 ---
-
-## ✅ Summary
-
-You’ve covered the basics:
-- What Python is and why it’s popular
-- How to use modules
-- Creating and using variables
-- Understanding core data types
-
-From here, you can explore:
-- Control structures (if, loops)
-- Functions
-- Object-Oriented Programming
-- File handling
-- Error handling
-
-Happy Coding! 🚀
+ 
