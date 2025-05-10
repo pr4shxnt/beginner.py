@@ -269,6 +269,6 @@ print(my_list[::-1])  # [6, 5, 4, 3, 2, 1, 0] (reverse list)
 
 ---
 
-## ✂️ Practice Program
+## 🎯 Practice Program
 
 Check ``` number_guess_game.py ``` and ``` phone_number_balance_handler.py ``` 
