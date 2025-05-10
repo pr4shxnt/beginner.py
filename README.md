@@ -1,4 +1,4 @@
-# Python Basics: Introduction, Modules, Variables, and Data Types
+# Python Basics: Introduction, Modules, Variables, Data Types, Operations and String methods
 
 Welcome to this beginner-friendly guide to Python programming! This README provides a foundational overview of key Python concepts.
 
