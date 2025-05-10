@@ -125,3 +125,146 @@ print(f"My name is {name} and I'm {age} years old.")
 
 # .format() method
 print("My name is {} and I'm {} years old.".format(name, age))
+
+
+
+# 📘 Python Operations, Operators, Slicing & Indexing
+
+## 📌 Python Arithmetic Operations
+
+Used for basic mathematical calculations:
+
+```python
+a = 10
+b = 3
+
+print(a + b)  # Addition
+print(a - b)  # Subtraction
+print(a * b)  # Multiplication
+print(a / b)  # Division
+print(a % b)  # Modulus
+print(a ** b) # Exponentiation
+print(a // b) # Floor Division
+```
+
+---
+
+## 📊 Comparison Operators
+
+Used to compare two values:
+
+```python
+a = 5
+b = 10
+
+print(a == b)  # Equal to
+print(a != b)  # Not equal to
+print(a > b)   # Greater than
+print(a < b)   # Less than
+print(a >= b)  # Greater than or equal to
+print(a <= b)  # Less than or equal to
+```
+
+---
+
+## 🧠 Logical Operators
+
+Used to combine conditional statements:
+
+```python
+x = True
+y = False
+
+print(x and y)  # Logical AND
+print(x or y)   # Logical OR
+print(not x)    # Logical NOT
+```
+
+---
+
+## 🖋 Assignment Operators
+
+Used to assign values to variables:
+
+```python
+a = 10
+a += 5  # a = a + 5
+a -= 3
+a *= 2
+a /= 4
+a %= 2
+a **= 3
+a //= 2
+```
+
+---
+
+## ⚙ Bitwise Operators
+
+Work on bits and perform bit-by-bit operations:
+
+```python
+a = 5      # 0b0101
+b = 3      # 0b0011
+
+print(a & b)  # AND
+print(a | b)  # OR
+print(a ^ b)  # XOR
+print(~a)     # NOT
+print(a << 1) # Left shift
+print(a >> 1) # Right shift
+```
+
+---
+
+## 👁 Identity and Membership Operators
+
+### Identity Operators:
+```python
+x = [1, 2, 3]
+y = x
+z = [1, 2, 3]
+
+print(x is y)  # True
+print(x is z)  # False
+print(x is not z)  # True
+```
+
+### Membership Operators:
+```python
+my_list = [1, 2, 3, 4]
+
+print(2 in my_list)   # True
+print(5 not in my_list) # True
+```
+
+---
+
+## 🧱 Indexing in Python
+
+Indexing gives you access to individual elements in a sequence (like strings, lists, tuples):
+
+```python
+my_list = [10, 20, 30, 40, 50]
+
+print(my_list[0])  # 10
+print(my_list[-1]) # 50
+```
+
+---
+
+## ✂️ Slicing in Python
+
+Slicing allows you to extract a portion of a list or string:
+
+```python
+my_list = [0, 1, 2, 3, 4, 5, 6]
+
+print(my_list[1:5])   # [1, 2, 3, 4]
+print(my_list[:3])    # [0, 1, 2]
+print(my_list[3:])    # [3, 4, 5, 6]
+print(my_list[::2])   # [0, 2, 4, 6]
+print(my_list[::-1])  # [6, 5, 4, 3, 2, 1, 0] (reverse list)
+```
+
+---
