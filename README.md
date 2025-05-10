@@ -44,7 +44,7 @@ Use it in another file:
 ```python
 import mymodule
 
-print(mymodule.greet("Alice"))
+print(mymodule.greet("Prashant"))
 ```
 
 ---
