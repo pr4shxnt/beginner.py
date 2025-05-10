@@ -56,7 +56,7 @@ A **variable** is a name that references a value. Python variables are created w
 ### Example:
 ```python
 x = 10
-name = "John"
+name = "Prashant"
 is_active = True
 ```
 
@@ -87,7 +87,7 @@ Python has several built-in data types categorized as follows:
 | `list`     | Ordered, mutable sequence       | `[1, 2, 3]`                  |
 | `tuple`    | Ordered, immutable sequence     | `(1, 2, 3)`                  |
 | `set`      | Unordered, no duplicates        | `{1, 2, 3}`                  |
-| `dict`     | Key-value pairs (hashmap)       | `{"name": "Alice", "age": 25}` |
+| `dict`     | Key-value pairs (hashmap)       | `{"name": "Prashant", "age": 17}` |
 
 ### Type Checking:
 ```python
