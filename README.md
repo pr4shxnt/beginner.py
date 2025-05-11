@@ -285,23 +285,28 @@ a = "male"
 if a == "male":
   print("You are a male!!")
 else:
-  print("You are a female")
+  print("You are a cute little girlie and feminine character.")
+
+# returns "You are a male!!"
 
 ```
 
 Lets say in some cases, 3 or 4 options apply for the code. For example; we got extra 1 extra gender ie. transgender and people could choose "rather not say". Here comes else if statement countering the first if statement returns negative boolean value. 
  ```python
 
-a = "male"
+a = "prefer not to say"
 
 if a == "male": 
     print("You are a male!!")
 elif a == "transgender":
     print("You are a transgender")
 elif  a == "female":
-    print("You are a cute little girlie and feminine character.")
+    print("Just marry me already🌹🌹🌹")
 else:
     print("You're cooked. You chose rather not to express your gender. Such a gay thing to do.")
+
+
+#returns "You're cooked. You chose rather not to express your gender. Such a gay thing to do."
 
 ```
 
