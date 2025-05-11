@@ -291,19 +291,18 @@ if(a == male) {
 
 Lets say in some cases, 3 or 4 options apply for the code. For example; we got extra 1 extra gender ie. transgender and people could choose "rather not say". Here comes else if statement countering the first if statement returns negative boolean value. 
  ```python
-a = male
 
-if(a == male) {
+a = "male"
+
+if a == "male": 
     print("You are a male!!")
-} 
-elif( a == transgender) {
+elif a == "transgender":
     print("You are a transgender")
-} 
-elif ( a == female) {
+elif  a == "female":
     print("You are a cute little girlie and feminine character.")
-} else {
+else:
     print("You're cooked. You chosed rather not to express your gender. Such a gay thing to do.")
-}
+
 ```
 
 
