@@ -280,13 +280,13 @@ Check  ``` phone_number_balance_handler.py ```
 Conditional statements basically means, invoking functions if a condition is true (if) and invoking other function if it returns other outcomes (else)
 
 ```python
-a = male
+a = "male"
 
-if(a == male) {
-    print("You are a male!!")
-} else {
-    print("You are a female")
-}
+if a == "male":
+  print("You are a male!!")
+else:
+  print("You are a female")
+
 ```
 
 Lets say in some cases, 3 or 4 options apply for the code. For example; we got extra 1 extra gender ie. transgender and people could choose "rather not say". Here comes else if statement countering the first if statement returns negative boolean value. 
