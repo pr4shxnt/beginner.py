@@ -295,13 +295,16 @@ a = male
 
 if(a == male) {
     print("You are a male!!")
-} elif( a == transgender) {
+} 
+elif( a == transgender) {
     print("You are a transgender")
-} elif ( a == female) {
+} 
+elif ( a == female) {
     print("You are a cute little girlie and feminine character.")
 } else {
     print("You're cooked. You chosed rather not to express your gender. Such a gay thing to do.")
 }
 ```
+
 
 ---
