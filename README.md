@@ -277,7 +277,7 @@ Check  ``` phone_number_balance_handler.py ```
 
 ## ✅❌ Conditional Statements
 
-Conditional statements basically means, invoking functions if a condition is true (if) and invoking other function if it returns other outcomes (else)
+"Conditional statements allow a program to execute certain blocks of code or functions only if specified conditions are met. For example, using ```if``` to run a function when a condition is true, and ```else``` to run a different function when it's false.
 
 ```python
 a = "male"
