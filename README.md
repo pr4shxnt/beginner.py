@@ -117,8 +117,8 @@ Python provides many built-in methods for manipulating strings. Strings are immu
 ### String Formatting:
 
 ```python
-name = "Alice"
-age = 25
+name = "Prashant"
+age = 17
 
 # f-string
 print(f"My name is {name} and I'm {age} years old.")
