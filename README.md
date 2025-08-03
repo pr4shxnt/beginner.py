@@ -67,6 +67,10 @@ is_active = True
 - Can contain letters, numbers, underscores
 - Case-sensitive (`age` ≠ `Age`)
 
+
+### Variable Naming Converntion:
+- Separate words with underscore (_)
+
 ---
 
 ## 🔢 Data Types in Python
