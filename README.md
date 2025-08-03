@@ -68,14 +68,22 @@ is_active = True
 - Case-sensitive (`age` ≠ `Age`)
 
 
-### Variable Naming Converntion:
-- Separate words with underscore (_)
-
+### Variable Naming Convention:
+- Separate words with underscore ("_").
+- Constant variables should be BLOCK TYPED.
 ---
 
 ## 🔢 Data Types in Python
 
-Python has several built-in data types categorized as follows:
+Data Type determines the nature of the data, It also determines the amount of space required to store the value.Python has several built-in data types categorized as follows:
+
+### Types of Data Types:
+| Primitive      | Non-primitive   |
+|----------------|-----------------|
+| `int`          | `list`          |
+| `float`        | `tuple`         |
+| `str`          | `set"`          |
+| `bool`         | `dictionary`    |
 
 ### Basic Data Types:
 | Type      | Example        |
