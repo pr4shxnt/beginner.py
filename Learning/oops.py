@@ -76,7 +76,13 @@ class Teacher:
 
     def hello(self):
         print(f'hello {self.name}')
+    
+    def get_name(self):
+        return self.name
+
+t_name = input('Enter your name:')
+
+t1 = Teacher(t_name)
+print(f"Hello {t1.get_name()}")
 
 
-t1 = Teacher('Shyam')
-t1.hello()
