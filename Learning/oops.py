@@ -80,9 +80,48 @@ class Teacher:
     def get_name(self):
         return self.name
 
-t_name = input('Enter your name:')
+# t_name = input('Enter your name:')
 
-t1 = Teacher(t_name)
-print(f"Hello {t1.get_name()}")
+# t1 = Teacher(t_name)
+# print(f"Hello {t1.get_name()}")
 
 
+'''
+Practice by passing whole ass list into the objects
+'''
+
+#non-static/normal method in OOP
+
+class Std:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum += val
+        print(f"Hi {self.name} Your average marks is {sum/len(self.marks)}")
+
+
+s_1 = Std('Prashant', [20,30])
+
+s_1.get_avg()
+
+
+
+#Static method in OOP
+
+
+'''
+-Methods that doesn't use the self parameter and works at class level
+
+#decorator - allows us to wrap another function in order to extent the behaviour of the wrapped function, without permanently modifying it
+
+-
+'''
+
+class School:
+    @staticmethod #decorator
+    def Student():
+        print('Fuck youuuuuuuuu')
