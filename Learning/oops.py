@@ -116,12 +116,51 @@ s_1.get_avg()
 '''
 -Methods that doesn't use the self parameter and works at class level
 
-#decorator - allows us to wrap another function in order to extent the behaviour of the wrapped function, without permanently modifying it
+#decorator - allows us to wrap another function in order to extent the behaviour of the wrapped function, without permanently modifying it (compulsary)
 
--
+-use where object is not necessary, like where self attributes are not necessary at all
 '''
 
 class School:
     @staticmethod #decorator
     def Student():
         print('Fuck youuuuuuuuu')
+
+
+#four main modules of Object Oriented Programming
+
+
+#Abstraction
+
+'''
+Abstraction: Hiding the implementation details of a class and only showing the essential features to the user.
+'''
+
+#implementation of abstraction
+
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+
+    def start(self):
+        self.clutch = True
+        self.acc = True
+        print("Car Started")
+
+car1 = Car()
+car1.start() #hid the unecessary background logic of the constructor and called the start function
+
+
+
+
+#Encapsulation
+
+'''
+Encapsulation: Wrapping data and functions into a single object.
+
+every functions we made above falls inside encapsulation.
+'''
+
+ 
