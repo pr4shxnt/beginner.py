@@ -104,9 +104,9 @@ class Std:
         print(f"Hi {self.name} Your average marks is {sum/len(self.marks)}")
 
 
-s_1 = Std('Prashant', [20,30])
+# s_1 = Std('Prashant', [20,30])
 
-s_1.get_avg()
+# s_1.get_avg()
 
 
 
@@ -138,7 +138,7 @@ Abstraction: Hiding the implementation details of a class and only showing the e
 
 #implementation of abstraction
 
-class Car:
+class Cars:
     def __init__(self):
         self.acc = False
         self.brk = False
@@ -149,8 +149,8 @@ class Car:
         self.acc = True
         print("Car Started")
 
-car1 = Car()
-car1.start() #hid the unecessary background logic of the constructor and called the start function
+car1 = Cars()
+# car1.start() #hid the unecessary background logic of the constructor and called the start function
 
 
 
@@ -163,4 +163,97 @@ Encapsulation: Wrapping data and functions into a single object.
 every functions we made above falls inside encapsulation.
 '''
 
- 
+
+#Inheritance
+
+'''
+-When one class (child/derived) derives the properties & methods of another class (parent/base).
+
+-We declare child same like the parent but we call parent class inside the parentheses of the child class.
+
+-Super method: super() method is used to access methods of parent class in child class.
+
+-Types of Inheritance:
+    Single
+    Multi-level
+    Multiple
+
+Single Inheritance: Base/Parent -> Derived/Child; #I1 to #I2
+
+Multi level Inheritance: Parent -> Child -> Child; #I1 to #I3
+
+Multiple inheritance: Parent1-> Child1 ; #I4 to #I5
+                      Parent2 -> Child1
+'''
+
+#Example for Inheritance
+
+class Car: # Parent class #I1
+        def __init__(self, type):
+            self.type = type
+
+        @staticmethod
+        def start():
+            print('Car started.')
+
+        @staticmethod
+        def stop():
+            print('Car stopped.')
+
+class Toyota(Car): #child class
+    def __init__(self, brand, type):
+        self.brand = brand
+        super().__init__(type)
+        
+# car2 = Toyota('Supra') #I2
+
+class Supra(Toyota):
+    brand = 'Supra'
+    def __init__(self, gasoline, type ):
+        self.gasoline = gasoline
+        super().__init__(self.brand, type)
+
+car2 = Supra('Petrol', 'Supercar')
+
+print(car2.type, car2.brand, car2.gasoline) #I3
+
+
+#Example of Multiple Inheritance #I4
+
+class A:
+    varA = "welcome to class A"
+
+class B:
+    varB = 'Welcome to class B'
+
+class C(A, B):
+    varC = 'Welcome to class C'
+
+# c1 = C()
+# print(f'{c1.varA}.....{c1.varB}.....{c1.varC}') #I5
+
+#PolyMorphism
+
+'''
+
+'''
+
+
+
+
+#More to go
+
+'''
+-del : used to delete object properties or object itself: {del s1.name or del s1}
+
+-private(like) attributes & methods:
+    Conceptual implementations in python
+        ->Private attributes & methods are meant to be used only within the class and are not accessible from outside the class. We can make an attribute or an object private by addding two sequential underscores before the attribute or the object name.
+        -> we can access it insite the class level but outside it is impossible to breach.
+'''
+
+
+class BankAcc:
+    def __init__(self, acc_no, acc_pw):
+        self.acc_no = acc_no
+        self.__acc_pw = acc_pw #privated the sensitive information
