@@ -232,13 +232,37 @@ class C(A, B):
 # c1 = C()
 # print(f'{c1.varA}.....{c1.varB}.....{c1.varC}') #I5
 
+
+
+
+####################################
+
+
+
+
 #PolyMorphism
 
 '''
-
+-When the same operator is allowed to have different meaning according to the context.
 '''
 
+#####################################
 
+#class method
+'''
+-Class method is bound to the class & receives the class as an implicit first argument.
+
+Note: Static method can't access or modify the class state and generally for utility
+'''
+class Staff:
+    name = 'Rahul'
+    @classmethod
+    def college(cls):
+        cls.name = 'Sanjay Kumar time machine activate'
+    
+
+
+######################################
 
 
 #More to go
@@ -250,6 +274,8 @@ class C(A, B):
     Conceptual implementations in python
         ->Private attributes & methods are meant to be used only within the class and are not accessible from outside the class. We can make an attribute or an object private by addding two sequential underscores before the attribute or the object name.
         -> we can access it insite the class level but outside it is impossible to breach.
+
+-Property decorator: use the method as property
 '''
 
 
@@ -257,3 +283,20 @@ class BankAcc:
     def __init__(self, acc_no, acc_pw):
         self.acc_no = acc_no
         self.__acc_pw = acc_pw #privated the sensitive information
+
+
+class Stdnts:
+    def __init__(self, phy,chem, maths):
+        self.chem = chem
+        self.phy = phy
+        self.maths = maths
+
+    @property
+    def percentage(self):
+        return str((self.phy + self.chem+ self.maths)/3) + "%"
+    
+
+# rahul_marks = Stdnts(34, 66, 45)
+# rahul_marks.phy = 94
+# rahul_marks.maths = 63
+# print(rahul_marks.percentage)
