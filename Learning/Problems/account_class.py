@@ -26,3 +26,6 @@ class Account:
 
 acc1 = Account("NIMB bank", 10000, 2345)
 acc1.debit(2500)
+
+
+#this is solution of the problem for banking account.
