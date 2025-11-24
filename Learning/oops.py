@@ -69,7 +69,6 @@ class attributes and instance attributes
 hello function is a method here in this context.
 '''
 
-
 class Teacher:
     def __init__(self, fullname):
         self.name = fullname
