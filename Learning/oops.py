@@ -229,7 +229,8 @@ class C(A, B):
     varC = 'Welcome to class C'
 
 # c1 = C()
-# print(f'{c1.varA}.....{c1.varB}.....{c1.varC}') #I5
+# print(f'{c1.varA}.....{c1.varB}.....{c1.varC}') #I5t(parts[0]), ____, ____
+        # Return the class instance
 
 
 
