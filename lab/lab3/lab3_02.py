@@ -1,10 +1,9 @@
 #3.2 Menu driven program for making transactions of a bank account.
 
 name= input('Enter your name: ')
-quit = False
 balance = 1000
 
-while quit==False:
+while True:
     print('Enter a query')
     print('Making a deposit: 1')
     print('Making a withdrawal: 2')
@@ -18,8 +17,11 @@ while quit==False:
         print(f'Dear {name}, your new balance is {balance}')
     elif query == '2':
         sub = float(input('Enter an amount to withdraw: '))
-        balance -= sub
-        print(f'Dear {name}, your new balance is {balance}')
+        if balance - sub >= 0:
+            print('Insufficient balance')
+        else:
+            balance -= sub 
+            print(f'Dear {name}, your new balance is {balance}')
     elif query == '3':
         print(f'Dear {name}, your balance is {balance}')
     elif query == 'q' or query == 'quit':
