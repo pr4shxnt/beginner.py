@@ -27,3 +27,6 @@ while True:
     elif query == 'q' or query == 'quit':
         print(f'Quiting menu')
         break
+
+
+
